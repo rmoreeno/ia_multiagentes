@@ -169,12 +169,10 @@ while running:
 
     # Desenhar sinais vitais dos pacientes
     for i, paciente in enumerate(pacientes):
-        # Calcular a posição X e Y com base na posição do quarto
         if i < 4:
             x, y = 50 + i * 190, 50
         else:
             x, y = 50 + (i - 4) * 190, 430
-        # Desenhar os sinais vitais um pouco acima da posição calculada
         draw_vitals(x + 20, y + 20, paciente.sinais_vitais)
 
     # Mover os agentes e desenhá-los em suas posições atuais
